@@ -4,9 +4,10 @@ import * as deliveryCtrl from '../controllers/delivery.controller'
 const router = Router()
 
 // GET
+router.get('/listshipments', deliveryCtrl.listShipmentsTask)
 
 // POST
-router.post('/login', deliveryCtrl.loginUserTask)
-router.post('/register', deliveryCtrl.registerUsersTask)
+router.post('/scheduleshipment', deliveryCtrl.scheduleShipmentTask)
+
 
 export default router
