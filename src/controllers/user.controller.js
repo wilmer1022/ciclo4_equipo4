@@ -25,6 +25,7 @@ export const logout = async (req, res) => {
 };
 
 export const registerUsersTask = async (req, res) => {
+  console.log(req.body)
   const newUser = new User({
     dni: req.body.dni,
     nombre: req.body.nombre,

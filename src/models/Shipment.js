@@ -68,6 +68,11 @@ const shipmentSchema = new Schema({
       required: true,
       alias: "estado",
     },
+	costo_envio: {
+	  type: Number,
+	  required: false,
+	  alias: "costo_envio",
+	}
   },
 });
 
