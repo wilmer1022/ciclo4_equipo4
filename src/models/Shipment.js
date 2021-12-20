@@ -15,6 +15,10 @@ const shipmentSchema = new Schema({
     type: Schema.Types.ObjectId,
     required: false,
   },
+  hora_disponible: {
+	type: Date,
+	required: true,
+  },
   paquete: {
     peso: {
       type: Number,
