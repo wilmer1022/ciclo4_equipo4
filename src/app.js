@@ -15,7 +15,7 @@ createRoles();
 app.set("port", process.env.PORT || 4000);
 
 app.use(express.json());
-app.use(cors({ origin: config.originURL }));
+app.use(cors({ origin: "*" }));
 app.use(morgan("dev"));
 
 // routes
